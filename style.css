@@ -1,0 +1,115 @@
+:root {
+	--circle-radius: 100px;
+	--red-color: 
+}
+
+body {
+	font-family: 'Fira Code';
+	margin: 0;
+}
+
+.panel {
+	position: absolute;
+	margin: 10px;
+}
+
+.global {
+	mix-blend-mode: multiply;
+}
+
+.circle {
+	position: absolute;
+	text-align: center;
+	line-height: calc(var(--circle-radius) * 2);
+	font-size: 30px;
+	vertical-align: middle;
+	height: calc(var(--circle-radius) * 2);
+	width: calc(var(--circle-radius) * 2);
+	border-radius: var(--circle-radius);
+	background: rgba(128, 128, 128, 0.6);
+	color: #333;
+	mix-blend-mode: screen;
+}
+.circle:nth-of-type(1) {
+	background-color: rgba(244, 67, 54, 0.6);
+	color: #b71c1c;
+}
+.circle:nth-of-type(2) {
+	background: rgba(139, 195, 74, 0.6);
+	color: #33691e;
+}
+.circle:nth-of-type(3) {
+	background: rgba(3, 169, 244, 0.6);
+	color: #01579b;
+}
+.circle:nth-of-type(4) {
+	background: rgba(255, 193, 7, 0.6);
+	color: #ff6f00;
+}
+.circle:nth-of-type(5) {
+	background: rgba(103, 58, 183, 0.6);
+	color: #311b92;
+}
+.circle:nth-of-type(6) {
+	background: rgba(255, 87, 34, 0.6);
+	color: #dd2c00;
+}
+
+.intersection {
+	position: absolute;
+	height: calc(var(--circle-radius) * 2);
+	width: calc(var(--circle-radius) * 2);
+	border-radius: var(--circle-radius);
+}
+
+.multiply {
+	mix-blend-mode: multiply;
+}
+
+.lighten {
+	mix-blend-mode: lighten;
+}
+
+.filter {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 1);
+}
+
+.filter-negative {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-color: white;
+}
+
+.leaf {
+	position: absolute;
+	border-radius: inherit;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(255, 255, 255, 1);
+}
+
+.leaf-negative {
+	position: absolute;
+	border-radius: inherit;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 1);
+}
+
+.leaf-new {
+	background:
+		linear-gradient(
+			to right top,
+			transparent 48.9%,
+			rgba(255, 255, 255, 0.7) 51%, rgba(255, 255, 255, 0.7) 78%,
+			transparent 80% ),
+		linear-gradient(
+			to right top,
+			rgba(255, 255, 255, 0.7) 28%,
+			transparent 30% );
+	background-size: 1em 1em;
+}
