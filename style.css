@@ -100,16 +100,9 @@ body {
 	background-color: rgba(0, 0, 0, 1);
 }
 
-.leaf-new {
-	background:
-		linear-gradient(
-			to right top,
-			transparent 48.9%,
-			rgba(255, 255, 255, 0.7) 51%, rgba(255, 255, 255, 0.7) 78%,
-			transparent 80% ),
-		linear-gradient(
-			to right top,
-			rgba(255, 255, 255, 0.7) 28%,
-			transparent 30% );
-	background-size: 1em 1em;
+.block {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	background: rgba(255, 255, 255, 0.3);
 }
